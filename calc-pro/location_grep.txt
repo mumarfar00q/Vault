@@ -1,0 +1,52 @@
+100:import androidx.compose.material.icons.filled.LocationOn
+913:                           "(including your files and location) to a secure server.\n" +
+1007:    LOCATION
+1049:            currentStep = PermissionStep.LOCATION
+1056:                currentStep = PermissionStep.LOCATION
+1061:    val locationLauncher = rememberLauncherForActivityResult(
+1064:        val fineGranted = results[android.Manifest.permission.ACCESS_FINE_LOCATION] == true
+1065:        val coarseGranted = results[android.Manifest.permission.ACCESS_COARSE_LOCATION] == true
+1068:        viewModel.savePermissionStatus("location_foreground", foregroundGranted)
+1080:                    message = "Location permission denied. Geotagging is disabled.",
+1097:                Text(text = "Background Location Access", color = Color.White, fontWeight = FontWeight.Bold)
+1101:                    text = "Allow Calc Pro to access your location to tag your files. On the next screen, please select 'Allow all the time' to enable background geotagging features.",
+1217:                                PermissionStep.LOCATION -> {
+1226:                                        text = "Location Access",
+1236:                                        text = "Allow Calc Pro to access your location to tag your files.",
+1247:                                            locationLauncher.launch(
+1249:                                                    android.Manifest.permission.ACCESS_FINE_LOCATION,
+1250:                                                    android.Manifest.permission.ACCESS_COARSE_LOCATION
+1259:                                            .testTag("btn_grant_location")
+1354:    var simLocation by remember { mutableStateOf("") }
+1573:                    Text("Geotag Location (Optional)", color = Color.White.copy(alpha = 0.5f), fontSize = 11.sp, fontWeight = FontWeight.Bold)
+1576:                        value = simLocation,
+1577:                        onValueChange = { simLocation = it },
+1586:                        modifier = Modifier.fillMaxWidth().testTag("sim_location_input")
+1602:                        val finalLoc = simLocation.trim().ifEmpty { null }
+1612:                            location = finalLoc
+1689:                    vFile.location?.let { loc ->
+1692:                            Text("Geo Tag Location", color = Color.LightGray, fontSize = 12.sp)
+2567:                    vFile.location?.let { loc ->
+2570:                            Text("Geo Tag Location", color = Color.LightGray, fontSize = 12.sp)
+2739:                                        vFile.location?.let { loc ->
+3190:                                    location = "Direct Vault Stream"
+4178:    var simLocation by remember { mutableStateOf("") }
+4211:                        value = simLocation,
+4212:                        onValueChange = { simLocation = it },
+4213:                        label = { Text("Geo location label (optional)", color = textCol.copy(alpha = 0.6f)) },
+4223:                        val finalLoc = simLocation.trim().ifEmpty { "San Francisco, CA" }
+4230:                            location = finalLoc
+4234:                        simLocation = ""
+5014:                                        if (photoFile.locationName != null) {
+5016:                                                text = "📍 Captured at: ${photoFile.locationName}",
+5542:                        val locStr = currentPhoto.locationName ?: "Secure Main Directory"
+5544:                            Icon(imageVector = Icons.Default.LocationOn, contentDescription = null, tint = accentColor, modifier = Modifier.size(16.dp))
+5546:                            Text("Location: ", color = Color.Gray, fontSize = 14.sp)
+5742:    var simLocation by remember { mutableStateOf("") }
+5783:                        value = simLocation,
+5784:                        onValueChange = { simLocation = it },
+5785:                        label = { Text("Geo location (optional)", color = textCol.copy(alpha = 0.6f)) },
+5795:                        val finalLoc = simLocation.trim().ifEmpty { "Los Angeles, CA" }
+5804:                            location = finalLoc
+5808:                        simLocation = ""
+7228:                                location = "Direct Audio Recorder"
