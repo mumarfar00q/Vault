@@ -1,0 +1,6 @@
+{
+  "name": "Calc Pro",
+  "description": "A fully functional scientific calculator designed with dynamic portrait and landscape orientations, styled in highly polished Material 3 dark aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
