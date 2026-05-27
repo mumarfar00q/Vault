@@ -1,6 +1,0 @@
-{
-  "name": "Calc Pro",
-  "description": "Secure secret Vault hidden behind a functional scientific calculator.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
