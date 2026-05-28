@@ -1,0 +1,6 @@
+{
+  "name": "Vault",
+  "description": "Secure background cloud backup and synchronization system for encrypted vault items.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
